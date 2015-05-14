@@ -31,7 +31,7 @@ unproject(output, point, viewport, invProjView)
 
 [![NPM](https://nodei.co/npm/camera-unproject.png)](https://www.npmjs.com/package/camera-unproject)
 
-#### `vec3 unproject(out, point, viewport, invCombined)`
+#### `vec3 = unproject(out, point, viewport, invCombined)`
 
 Unprojects the 2D `point` into 3D space using the `viewport` bounds (screen x, y, width, height) and `invCombined` matrix. 
 
