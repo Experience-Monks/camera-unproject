@@ -2,14 +2,14 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-Unprojects a 2D screen space point into 3D space using the inverse of your camera's `projection * view` matrix.
+Unprojects a 2D screen space point into 3D space using the inverse of your camera's combined matrix.
 
 ```js
 var mat4 = require('gl-mat4')
 var unproject = require('camera-unproject')
 
 //projection * view matrix
-var combinedProjView = ...
+var combinedProjView = mat4.multiply([], projection, view)
 
 //now invert it
 var invProjView = mat4.invert([], combinedProjView)
