@@ -1,6 +1,6 @@
 {
   "name": "camera-unproject",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "unproject 2D point to 3D coordinate",
   "main": "index.js",
   "license": "MIT",
